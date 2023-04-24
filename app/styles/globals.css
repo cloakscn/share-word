@@ -95,13 +95,9 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-/*a {*/
-/*  color: inherit;*/
-/*  text-decoration: none;*/
-/*}*/
-
 a {
-  color: red;
+  color: inherit;
+  text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {
