@@ -1,8 +1,13 @@
 package redis
 
 import (
+	"encoding/json"
+	"fmt"
+	"github.com/cloakscn/share-word/utils/md5"
 	"github.com/go-redis/redis"
 	"log"
+	"strconv"
+	"time"
 )
 
 var (
@@ -24,4 +29,13 @@ func Init(cfg *Config) {
 		DB:       cfg.DB,
 	})
 	log.Println("初始化 Redis 成功。")
+}
+
+func GetRedisKey(namespace string, value map[string]interface{}) (string, error) {
+	marshal, err := json.Marshal(value)
+	if err != nil {
+		return "", err
+	}
+
+	return fmt.Sprintf("%s::%s_%s", namespace, md5.GetMD5(marshal), strconv.FormatInt(time.Now().Unix(), 10)), nil
 }

@@ -1,7 +1,12 @@
 package errors
 
 import (
+	"golang.org/x/xerrors"
 	"log"
+)
+
+var (
+	ErrorBadParam = xerrors.New("错误的请求内容")
 )
 
 func ErrorHandler(err error) {
