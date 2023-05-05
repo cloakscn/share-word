@@ -6,5 +6,5 @@ import (
 )
 
 func Router(engine *gin.Engine) {
-	v1.routerV1(engine.Group("/v1"))
+	v1.RouterV1(engine.Group("/v1"))
 }

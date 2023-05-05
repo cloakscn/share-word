@@ -13,7 +13,7 @@ var (
 	redisService services.IRedisService = v1.NewRedisServiceImpl()
 )
 
-func routerV1(group *gin.RouterGroup) {
+func RouterV1(group *gin.RouterGroup) {
 	group.POST("/", GetByID)
 	group.POST("/create", Create)
 }

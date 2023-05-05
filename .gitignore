@@ -35,5 +35,5 @@ yarn-error.log*
 app/next-env.d.ts
 
 # idea
-/.history
-/.idea
+**/.history
+**/.idea
