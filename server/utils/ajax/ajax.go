@@ -1,9 +1,10 @@
 package ajax
 
 import (
-	"github.com/cloakscn/share-word/utils/errors"
-	"github.com/gin-gonic/gin"
 	"net/http"
+
+	"github.com/cloakscn/share-word/server/utils/errors"
+	"github.com/gin-gonic/gin"
 )
 
 var (

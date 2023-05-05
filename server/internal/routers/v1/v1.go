@@ -1,12 +1,12 @@
 package v1
 
 import (
-	"github.com/cloakscn/share-word/internal/services"
-	v1 "github.com/cloakscn/share-word/internal/services/impl/v1"
-	"github.com/cloakscn/share-word/internal/vo/req"
-	"github.com/cloakscn/share-word/utils/ajax"
-	"github.com/gin-gonic/gin"
 	"strings"
+	"github.com/cloakscn/share-word/server/internal/services"
+	v1 "github.com/cloakscn/share-word/server/internal/services/impl/v1"
+	"github.com/cloakscn/share-word/server/internal/vo/req"
+	"github.com/cloakscn/share-word/server/utils/ajax"
+	"github.com/gin-gonic/gin"
 )
 
 var (

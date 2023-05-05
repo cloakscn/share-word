@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/cloakscn/share-word/cmd"
-	"github.com/cloakscn/share-word/config/https"
-	"github.com/cloakscn/share-word/config/redis"
+	"github.com/cloakscn/share-word/server/cmd"
+	"github.com/cloakscn/share-word/server/config/https"
+	"github.com/cloakscn/share-word/server/config/redis"
 )
 
 func main() {

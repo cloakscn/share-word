@@ -3,11 +3,12 @@ package redis
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/cloakscn/share-word/utils/md5"
-	"github.com/go-redis/redis"
 	"log"
 	"strconv"
 	"time"
+
+	"github.com/cloakscn/share-word/server/utils/md5"
+	"github.com/go-redis/redis"
 )
 
 var (

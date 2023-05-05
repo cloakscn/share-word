@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"github.com/cloakscn/share-word/internal/routers/v1"
+	"github.com/cloakscn/share-word/server/internal/routers/v1"
 	"github.com/gin-gonic/gin"
 )
 

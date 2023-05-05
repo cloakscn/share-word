@@ -1,4 +1,4 @@
-module github.com/cloakscn/share-word
+module github.com/cloakscn/share-word/server
 
 go 1.20
 

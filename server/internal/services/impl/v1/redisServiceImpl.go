@@ -3,13 +3,14 @@ package v1
 import (
 	"encoding/json"
 	"fmt"
-	x "github.com/cloakscn/share-word/config/redis"
-	"github.com/cloakscn/share-word/internal/vo/req"
-	"github.com/cloakscn/share-word/utils/constant"
-	"github.com/cloakscn/share-word/utils/enums"
-	"github.com/cloakscn/share-word/utils/errors"
 	"strings"
 	"time"
+
+	x "github.com/cloakscn/share-word/server/config/redis"
+	"github.com/cloakscn/share-word/server/internal/vo/req"
+	"github.com/cloakscn/share-word/server/utils/constant"
+	"github.com/cloakscn/share-word/server/utils/enums"
+	"github.com/cloakscn/share-word/server/utils/errors"
 )
 
 type RedisServiceImpl struct{}

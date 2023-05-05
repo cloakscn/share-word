@@ -1,10 +1,11 @@
 package https
 
 import (
-	"github.com/cloakscn/share-word/internal/routers"
-	"github.com/gin-gonic/gin"
 	"log"
 	"sync"
+
+	"github.com/cloakscn/share-word/server/internal/routers"
+	"github.com/gin-gonic/gin"
 )
 
 type Config struct {

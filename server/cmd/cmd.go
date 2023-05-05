@@ -1,9 +1,10 @@
 package cmd
 
 import (
-	"github.com/cloakscn/share-word/config/https"
-	"github.com/cloakscn/share-word/config/redis"
 	"sync"
+
+	"github.com/cloakscn/share-word/server/config/https"
+	"github.com/cloakscn/share-word/server/config/redis"
 )
 
 var (
