@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<style>
+    .none {
+        -webkit-filter: none;
+    }
+
+    .blur {
+        -webkit-filter: blur(3px);
+    }
+
+    .grayscale {
+        -webkit-filter: grayscale(1);
+    }
+
+    .invert {
+        -webkit-filter: invert(1);
+    }
+
+    .sepia {
+        -webkit-filter: sepia(1);
+    }
+</style>
+
+<body>
+    <div>
+
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <label>audio input device</label>
+                            <select id="audioinput"></select>
+                        </div>
+                        <div>
+                            <label>audio output device</label>
+                            <select id="audiooutput"></select>
+                        </div>
+                        <div>
+                            <label>video input device</label>
+                            <select id="videoinput"></select>
+                        </div>
+                        <div>
+                            <label>Filter:</label>
+                            <select id="filter">
+                                <option value="none">无</option>
+                                <option value="blur">模糊</option>
+                                <option value="grayscale">灰度</option>
+                                <option value="invert">invert</option>
+                                <option value="sepia">sepia</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <canvas id="picture"></canvas>
+                        </div>
+                    </td>
+                    <td>
+                        <video playsinline id="record"></video>
+                    </td>
+                </tr>
+                <tr>
+                    <td><audio controls id="audio"></audio></td>
+                    <td>
+                        <video controls playsinline id="player" class="blur"></video>
+                        <div>
+                            <button id="snapshot">Take snapshot</button>
+                            <button id="record">record</button>
+                            <button id="play" disabled>play</button>
+                            <button id="download" disabled>download</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="constraint" class="output"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <video autoplay controls id="displayVideo"></video>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="./js/client.js"></script>
+</body>
+</html>
