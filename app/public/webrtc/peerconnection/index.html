@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <label for="peera">local</label>
+                <video autoplay controls playsinline id="peera"></video>
+            </td>
+            <td>
+                <label for="peerb">remote</label>
+                <video autoplay controls playsinline id="peerb"></video>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="sdpa">local sdp single</label>
+                <textarea name="" id="sdpa" cols="100" rows="20"></textarea>
+            </td>
+            <td>
+                <label for="sdpb">remote sdp single</label>
+                <textarea name="" id="sdpb" cols="100" rows="20"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="start">start</button>
+                <button id="call" disabled>call</button>
+                <button id="stop" disabled>stop</button>
+            </td>
+        </tr>
+    </table>
+    <!-- 浏览器 WebRTC 适配 -->
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <!-- logic control -->
+    <script src="./js/client.js"></script>
+</body>
+
+</html>
